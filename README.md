@@ -52,8 +52,6 @@ The notebook covers:
 6. Evaluate with R², MSE, and MAE
 7. Serialize the trained model to `model.pkl` via `pickle`
 
-> ⚠️ **Note:** The notebook defines `X = df.drop("Scores", axis=1)` and `y = df["Hours"]`, which means the model predicts `Hours` from all other columns. The Streamlit app (`app.py`) is intentionally set up to predict **Scores from Hours**, which is the meaningful direction for this problem. Swap the `X`/`y` assignment in the notebook if you want both to align.
-
 ---
 
 ## 📈 Evaluation Metrics
@@ -124,8 +122,3 @@ See `requirements.txt`. Key dependencies:
 - Linear Regression achieves a high R² on this dataset, confirming the model fits well
 - The feature importance DataFrame confirms `Hours` as the sole predictor coefficient
 
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
